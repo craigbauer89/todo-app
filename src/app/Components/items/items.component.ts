@@ -25,6 +25,9 @@ export class ItemsComponent implements OnInit {
     this.itemService.removeItem(c);
   }
 
+ 
+
+
 }
 
 

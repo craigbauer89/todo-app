@@ -1,7 +1,7 @@
 <ul>
     <li  *ngFor="let item of items; let i = index">
       {{item.title}} 
-      <button [routerLink]="['/user', i]"  >More Info</button>
+      <button [routerLink]="['/completed', i]"  >Completed</button>
       <button (click)="deleteUser(item)" >X</button>
     </li>
   </ul>

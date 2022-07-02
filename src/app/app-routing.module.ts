@@ -9,7 +9,7 @@ const routes: Routes = [
   component: TodolistComponent
     
   },
-  { path: 'completed', 
+  { path: 'completed/:id', 
     component: CompletedComponent
   },
   { path: '', 

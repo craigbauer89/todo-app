@@ -1,0 +1,31 @@
+li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    color:white;
+}
+
+li a{
+    
+    text-decoration: none;
+    padding: 5px;
+    color:white;
+}
+
+li a:hover{
+    
+    color: rgb(12, 12, 61);
+    text-decoration: underline;
+}
+
+li:hover{
+    background-color: white;
+    color: rgb(12, 12, 61);
+    text-decoration: underline;
+    color:rgb(116, 68, 68);
+}
+
+.menutop {
+    background-color: rgb(12, 12, 61);
+    
+}

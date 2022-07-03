@@ -9,18 +9,22 @@ import { TodosService } from 'src/app/Services/todos.service';
 })
 export class CompletedComponent implements OnInit {
 
-  item!: Todo
+  items!: Todo[];
 
   constructor(
     private route: ActivatedRoute,
     private todoService: TodosService)  { }
     
-    ngOnInit(): void {
-          this.route.params.subscribe(ele => {
-            //console.log(ele['id'])
-            this.item = this.todoService.getItem(ele['id']);
-          })
+//     ngOnInit(): void {
+//           this.route.params.subscribe(ele => {
+//             //console.log(ele['id'])
+//             this.items = this.todoService.getItem(ele['id']);
+//           })
 
+// }
+
+ngOnInit(): void {
+  this.items = this.todoService.getItemList()
 }
 
 }

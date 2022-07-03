@@ -33,5 +33,9 @@ export class TodosService {
     return this.itemlist[index];
   }
 
+  completedItem(u: Todo): void {
+    u.completed = true;
+    console.log(u.completed);
+  }
  
 }

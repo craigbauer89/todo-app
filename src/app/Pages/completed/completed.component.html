@@ -1,4 +1,10 @@
-<h1>{{item.title}}</h1>
+<h1>Completed Items</h1>
+<ul *ngFor="let item of items; let i = index" >
+    <li  *ngIf="item.completed === true;">
+      {{item.title}} 
+      
+    </li>   
+  </ul>
 <!-- <h3 appMyDirective>{{item.title}}</h3>
 <p appMyDirective>Lorem ipsum dolor sit amet, consectetur adip</p>
 
@@ -11,6 +17,12 @@
   (B) Although the condition is true,
   this paragraph is displayed because appUnless is set to false.
 </p> -->
+
+<!-- <div *ngFor="let item of item" >
+    <ul *ngIf="item.completed === true;" >
+        <li>{{item.title}}</li>
+      </ul>
+    </div> -->
 
 
 

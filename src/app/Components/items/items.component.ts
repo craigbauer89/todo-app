@@ -25,9 +25,11 @@ export class ItemsComponent implements OnInit {
     this.itemService.removeItem(c);
   }
 
- 
+  completeItem(c: Todo): void {
+    //this.onDeleteUser.emit(c);
+    this.itemService.completedItem(c);
 
 
 }
 
-
+}

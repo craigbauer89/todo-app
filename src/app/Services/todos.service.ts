@@ -21,12 +21,21 @@ export class TodosService {
   }
 
   removeItem(u: Todo): void {
+    
     let index = this.itemlist.indexOf(u);
     this.itemlist.splice(index, 1);
+  
   }
 
   addItem(u: Todo): void {
+    if (u.title === undefined) {
+      alert('Must insert Task!')
+  }
+  else {
+    
     this.itemlist.push(u);
+    console.log(u);
+  }
   }
 
   getItem(index: number): Todo {

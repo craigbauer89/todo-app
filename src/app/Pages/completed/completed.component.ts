@@ -9,8 +9,10 @@ import { TodosService } from 'src/app/Services/todos.service';
 })
 export class CompletedComponent implements OnInit {
 
-  items!: Todo[];
+  genlist = 'Generating list....';
 
+  items!: Todo[];
+  pending:boolean = true;
   constructor(
     private route: ActivatedRoute,
     private todoService: TodosService)  { }
@@ -23,8 +25,13 @@ export class CompletedComponent implements OnInit {
 
 // }
 
-ngOnInit(): void {
-  this.items = this.todoService.getItemList()
+ ngOnInit(): void {
+  setTimeout (() => {
+    this.items = this.todoService.getItemList()
+  this.pending = false;
+ }, 2000);
 }
+
+
 
 }

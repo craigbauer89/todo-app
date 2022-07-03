@@ -9,20 +9,31 @@ import { TodosService } from 'src/app/Services/todos.service';
 })
 export class ItemsComponent implements OnInit {
 
+  genlist = 'Generating list....';
+  removeitem = 'Removing Item....';
   items!: Todo[];
-
+  pending:boolean = true;
+  removing:boolean = false;
   constructor(private itemService: TodosService) {
     /* let userService = new UserService();
     this.users = userService.getUserList() */
   }
 
+ 
+
   ngOnInit(): void {
+    setTimeout (() => {
     this.items = this.itemService.getItemList()
+    this.pending = false;
+    
+   }, 2000);
   }
 
-  deleteUser(c: Todo): void {
+  deleteItem(c: Todo): void {
+    this.removing = true;
     setTimeout (() => {
       this.itemService.removeItem(c);
+      this.removing = false;
    }, 2000);
     //this.onDeleteUser.emit(c);
     

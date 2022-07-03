@@ -1,11 +1,13 @@
-<div *ngIf="pending">{{genlist}}</div>
-<div *ngIf="removing">{{removeitem}}</div>
+<div class="placeholder">
+    <div *ngIf="pending">{{genlist}}</div>
+    <div *ngIf="removing">{{removeitem}}</div>
+</div>
 
 <ul>
     <li  *ngFor="let item of items; let i = index">
       {{item.title}} 
       <button class="complete" [routerLink]="['/completed', i]" (click)="completeItem(item)" >Completed</button>
-      <button class="delete"(click)="deleteItem(item)" >X</button>
+      <button class="delete"(click)="deleteItem(item)" >Remove</button>
     </li>
   </ul>
 

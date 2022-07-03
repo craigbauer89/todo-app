@@ -1,9 +1,15 @@
-<div>
-    <div>
-    <input type="text" [(ngModel)]="title" name="item"  placeholder="Insert Item...">
-    </div>
-    <div>
-        <button class="add"type="button" (click)="addItem()">+</button>
-    </div>
-    <div *ngIf="pending">{{additem}}</div>
-</div>    
+<header class="banner">
+    <h1>My Todo List</h1>
+    <div class="insert">
+        <div>
+        <input type="text" [(ngModel)]="title" name="item"  placeholder="Insert Item...">
+        </div>
+        <div>
+            <button class="add"type="button" (click)="addItem()">Add</button>
+        </div>
+        
+    </div>   
+    <!-- <div class="placeholder"> -->
+        <div *ngIf="pending">{{additem}}</div>
+    <!-- </div>  -->
+</header> 

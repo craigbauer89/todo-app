@@ -3,7 +3,7 @@
 body {
     margin: none;
     font-size: 1.5rem;
-    background-color: rgb(200, 187, 187);
+    background-color: white;
 }
 /* _________*/
 
@@ -14,6 +14,11 @@ body {
     background-color: rgb(129, 126, 164);
     color: white;
     text-align: center;
+    border: 1px solid black;
+}
+
+.placeholder {
+    height: 50px;
 }
 
 .insert  {
@@ -21,14 +26,18 @@ body {
     height: 50px;
     margin: 0 auto;
     display: flex;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
 .insert div:first-child {
     width: 75%;
+    
 }
 
 .insert div:last-child {
     width: 25%;
+   
 }
 
 .insert input, button {
@@ -37,60 +46,21 @@ body {
     box-sizing: border-box;
     border: none;
     font-size: 1rem;
+    
+    
 }
 
-/* __________ */
-
-
-/* .task  {
-    height: 50px;
-    padding-left: 2%;
-    display: flex;
+.insert input {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
-.task div:first-child {
-    width: 95%;
+.insert button {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
 }
 
-.task div:last-child {
-    width: 5%;
-}
-
-.task input {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border: none;
-    font-size: 1.5rem;
-}
-
-.task button {
-    width: 100%;
-    height: 100%;
-    border: none;
-    font-size: 1.5rem;
-    background-color: rgb(200, 187, 187);
-}
-
-.tasks div:nth-child(2n) div button {
-    background-color: darkgray;
-}
-
-.tasks div:nth-child(2n)  {
-    background-color: darkgray;
-}
-
-.task:hover {
-    background-color: rgb(64, 62, 62);
-    color: white;
-}
-
-#add:hover {
-    background-color: rgb(64, 62, 62);
-
-} */
-
-/* __________ */
 
 /* TASKS */
 
@@ -105,6 +75,10 @@ li {
     padding: 1%;
     padding-left: 2%;
     position: relative;
+    border: 1px solid black;
+    margin: .1% 0;
+    background-color: rgb(200, 187, 187);
+    border-radius: 10px;
 }
 
 li:nth-child(2n)  {
@@ -125,6 +99,7 @@ li input[type=checkbox] {
     left: 0;
     height: 60px;
     padding: 1%;
+    border-radius: 10px;
 }
 
 li button {
@@ -133,8 +108,7 @@ li button {
     width: 10%;
     top: 0;
     right: 0;
-    height: 60px;
-    padding: 1%;
+    border-radius: 10px;
 }
 
 .complete {
@@ -143,8 +117,8 @@ li button {
     width: 10%;
     top: 0;
     right: 150px;
-    height: 60px;
-    padding: 1%;
+    // height: 60px;
+    // padding: 1%;
 }
 
 li button:hover {

@@ -21,13 +21,19 @@ export class ItemsComponent implements OnInit {
   }
 
   deleteUser(c: Todo): void {
+    setTimeout (() => {
+      this.itemService.removeItem(c);
+   }, 2000);
     //this.onDeleteUser.emit(c);
-    this.itemService.removeItem(c);
+    
   }
 
   completeItem(c: Todo): void {
     //this.onDeleteUser.emit(c);
-    this.itemService.completedItem(c);
+    setTimeout (() => {
+      this.itemService.completedItem(c);
+   }, 2000);
+    
 
 
 }

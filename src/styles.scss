@@ -1,1 +1,163 @@
-/* You can add global styles to this file, and also import other style files */
+/* GENERALE */
+
+body {
+    margin: none;
+    font-size: 1.5rem;
+    background-color: rgb(200, 187, 187);
+}
+/* _________*/
+
+/* HEADER */
+.banner {
+    padding: 2.5%;
+    height: 200px;
+    background-color: rgb(129, 126, 164);
+    color: white;
+    text-align: center;
+}
+
+.insert  {
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.insert div:first-child {
+    width: 75%;
+}
+
+.insert div:last-child {
+    width: 25%;
+}
+
+.insert input, button {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    font-size: 1rem;
+}
+
+/* __________ */
+
+
+/* .task  {
+    height: 50px;
+    padding-left: 2%;
+    display: flex;
+}
+
+.task div:first-child {
+    width: 95%;
+}
+
+.task div:last-child {
+    width: 5%;
+}
+
+.task input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.task button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 1.5rem;
+    background-color: rgb(200, 187, 187);
+}
+
+.tasks div:nth-child(2n) div button {
+    background-color: darkgray;
+}
+
+.tasks div:nth-child(2n)  {
+    background-color: darkgray;
+}
+
+.task:hover {
+    background-color: rgb(64, 62, 62);
+    color: white;
+}
+
+#add:hover {
+    background-color: rgb(64, 62, 62);
+
+} */
+
+/* __________ */
+
+/* TASKS */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    height: 30px;
+    padding: 1%;
+    padding-left: 2%;
+    position: relative;
+}
+
+li:nth-child(2n)  {
+    background-color: darkgray;
+}
+
+li:hover {
+    background-color: rgb(64, 62, 62);
+    color: white;
+
+}
+
+li input[type=checkbox] {
+    background-color: transparent;
+    position: absolute;
+    width: 10%;
+    top: -9%;
+    left: 0;
+    height: 60px;
+    padding: 1%;
+}
+
+li button {
+    background-color: transparent;
+    position: absolute;
+    width: 10%;
+    top: 0;
+    right: 0;
+    height: 60px;
+    padding: 1%;
+}
+
+.complete {
+    background-color: transparent;
+    position: absolute;
+    width: 10%;
+    top: 0;
+    right: 150px;
+    height: 60px;
+    padding: 1%;
+}
+
+li button:hover {
+    color:white;
+    background-color: red;
+}
+
+.complete:hover {
+    color:white;
+    background-color: green;
+}
+
+/* __________ */
+
+
+
